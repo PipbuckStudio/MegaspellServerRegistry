@@ -36,4 +36,4 @@ megaspell-server-registry:
 
 ---
 
-Forked from [Megaspell/MegaspellLauncher](https://github.com/Megaspell/MegaspellServerRegistry)
+Forked from [Megaspell/MegaspellServerRegistry](https://github.com/Megaspell/MegaspellServerRegistry)
