@@ -22,8 +22,10 @@ Example compose configuration:
 
 ```yaml
 megaspell-server-registry:
-  image: ghcr.io/megaspell/megaspell-server-registry:latest
+  image: ghcr.io/pipbuckstudio/megaspell-server-registry:latest
   restart: unless-stopped
+  ports:
+    - "8080:8080"
   environment:
     DATABASE_URL: jdbc:postgresql://example.com:5432/postgres
     DATABASE_USER: postgres
@@ -31,3 +33,7 @@ megaspell-server-registry:
   volumes:
     - postgres-data:/var/lib/postgresql/data
 ```
+
+---
+
+Forked from [Megaspell/MegaspellLauncher](https://github.com/Megaspell/MegaspellServerRegistry)
